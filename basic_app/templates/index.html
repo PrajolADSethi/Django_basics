@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basics of Django </title>
+  </head>
+  <body>
+  <h1>{{data}}  <b>{{time}}</b> </h1>
+  <!-- jinga  -->
+  {% for item in list %}
+  <h2>{{item}}</h2>
+  {% endfor %}
+
+
+  {% for item in blogs %}
+  <h1>{{item.title}}</h1>
+  <h3>{{item.desc}}</h3>
+  {% endfor %}
+
+  {% for item in tech %}
+  <h1>{{item.title}}</h1>
+
+  {% endfor %}
+
+  </body>
+</html>
