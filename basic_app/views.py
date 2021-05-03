@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from . models import Blog
+from django.http import HttpResponse
 # Create your views here.
 def index(request):
     list1 = [1,2,3,4,5]
@@ -14,3 +15,7 @@ def index(request):
     'blogs': blogs
         }
     return render(request,'index.html',context=context)
+
+def new(request):
+    line= "Hello views ...."
+    return HttpResponse(line)
